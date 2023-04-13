@@ -362,7 +362,7 @@ Selanjutnya, `handleSubmit()` digunakan untuk mengirim data. Fungsi ini akan men
   
 Selanjutnya, event listener akan ditambahkan ke masing-masing button menggunakan `addEventListener()`. Event listener ini akan memanggil fungsi yang sesuai ketika button tersebut diklik.
   
-Dalam pembuatan javascript yang mampu mendukung pekerjaan yang diberikan ini, diperlukan banyak sekali built-in javascript method seperti `JSON.stringify()`, `JSON.parse()`, `localStorage.setItem()`, `localStorage.getItem()`, `localStorage.removeItem()`, `console.log()`, `console.clear()`, `document.getElementById()`, `document.querySelector()`, `document.createElement()`, `document.createTextNode()`, `element.appendChild()`, `element.addEventListener()`, `element.innerHTML = ''`, `element.value = ''`, `element.options[element.selectedIndex].text`, `element.selectedIndex`, `element.selectedOptions`, dan `confirm()`. yang mana fungsinya adalah sebagai berikut :
+Dalam pembuatan javascript yang mampu mendukung pekerjaan yang diberikan ini, diperlukan banyak sekali built-in javascript method seperti `JSON.stringify()`, `JSON.parse()`, `localStorage.setItem()`, `localStorage.getItem()`, `localStorage.removeItem()`, `console.log()`, `console.clear()`, `document.getElementById()`, `document.querySelector()`, `document.createElement()`, `document.createTextNode()`, `element.appendChild()`, `element.addEventListener()`, `element.innerHTML = ''`, `element.value = ''`, `element.options[element.selectedIndex].text`, `element.selectedIndex`, `element.selectedOptions`, dan `confirm()`. yang mana rangkuman fungsinya adalah sebagai berikut :
 - `JSON.stringify()` digunakan untuk mengubah objek menjadi string.
 - `Json.parse()` digunakan untuk mengubah string menjadi objek.
 - `localStorage.setItem()` digunakan untuk menyimpan data ke storage.
@@ -385,7 +385,7 @@ Dalam pembuatan javascript yang mampu mendukung pekerjaan yang diberikan ini, di
   
 Selain itu, diperlukannya penggunaan `if` maupun `if...else` untuk mengecek kondisi apakah data sudah ada di storage atau belum, dan juga penggunaan `for` untuk melakukan perulangan saat diperlukan.
   
-Melihat javascript yang dibuat ini memerlukan banyak sekali function di dalamnya, maka sangat disarankan untuk menggunakan export dan import untuk memisahkan kode javascript yang dibuat menjadi beberapa file, sehingga kode javascript yang dibuat akan lebih terstruktur dan mudah untuk dipelihara. Dalam pemisahan ini, diperlukan sekitar 5 file javascript, yaitu :
+Melihat kode javascript yang dibuat di atas memerlukan banyak sekali function di dalamnya, maka sangat disarankan untuk menggunakan export dan import untuk memisahkan kode javascript yang dibuat menjadi beberapa file, sehingga kode javascript yang dibuat akan lebih terstruktur, mudah untuk dipelihara dan dapat berjalan lebih cepat ketimbang hanya tersedia 1 file. Dalam pemisahan ini, diperlukan sekitar 5 file javascript, yaitu :
 - `data.js` digunakan untuk menyimpan data-data yang dibutuhkan.
 - `storage.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan storage.
 - `render.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan render.
