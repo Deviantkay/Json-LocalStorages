@@ -1,0 +1,105 @@
+/* Style untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    overflow: hidden;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Style untuk button Latest Data, All Data, dan Clear Data */
+
+.center{
+    text-align: center;
+}
+
+#latest-data-button,
+#all-data-button,
+#clear-data-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#latest-data-button:hover,
+#all-data-button:hover,
+#clear-data-button:hover {
+    background-color: #006080;
+}
+
+/* Style untuk kontainer data */
+#data-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+#data-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#data-container p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#data-container ul {
+    list-style: decimal;
+    padding: 0;
+    margin: 0;
+}
+
+#data-container li {
+    margin-bottom: 5px;
+}
