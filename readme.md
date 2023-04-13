@@ -25,10 +25,20 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
   
 ##  Project Tree
   
-- 📂 [__JS Web Storage__](Js-Web-Storage )
-  - 📄 [Index](index.html )
-  - 📄 [Script](script.js )
-  - 📄 [Style](Style.js )
+- 📂 [__JS Web Storage__](https://github.com/Deviantkay/Json-LocalStoragesJs-Web-Storage)
+  - 📂[Non Export](nonexport)
+    - 📄 [Index](nonexport/index.html)
+    - 📄 [Script](nonexport/main.js)
+    - 📄 [Style](nonexport/style.css)
+  - 📂[With Export](withexport)
+    - 📄 [Index](withexport/index.html)
+    - 📄 [Script](withexport/main.js)
+    - 📄 [Style](withexport/style.css)
+    - 📂[Export Lib](withexport/lib/)
+      - 📄 [data](withexport/lib/data.js)
+      - 📄 [form](withexport/lib/form)
+      - 📄 [render](withexport/lib/render.js)
+      - 📄 [storage](withexport/lib/storage.js)
   - 📄 [readme.md](readme.md )
 ---
   
