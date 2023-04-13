@@ -391,7 +391,7 @@ Melihat kode javascript yang dibuat di atas memerlukan banyak sekali function di
 - `render.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan render.
 - `form.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan form.
 - `index.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan event listener.
-- `main.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan event listener.
+- `main.js` digunakan untuk penggabungan semua file javascript yang dibuat sebelumnya dengan file `index.html`.
   
 Sehingga penyusunan kodenya dapat dilihat dibawah ini
 1. Data.js
@@ -542,11 +542,13 @@ Sehingga penyusunan kodenya dapat dilihat dibawah ini
     submitButton.addEventListener('click', handleSubmit);
    ```
 
-fungsi `export` digunakan untuk mengexport data-data yang dibutuhkan, sedangkan fungsi `import` digunakan untuk mengimport data-data yang dibutuhkan. Dengan menggunakan `export` dan `import` ini, maka kode javascript yang dibuat akan lebih terstruktur dan mudah untuk dipelihara.
+fungsi `export` digunakan untuk mengexport data-data yang dibutuhkan, sedangkan fungsi `import` digunakan untuk mengimport data-data yang dibutuhkan. Dalam penggunaannya, `export` dan `import` dapat dilihat pada kode diatas. Pada kode diatas, `export` digunakan pada file `data.js`, `storage.js`, `render.js`, `form.js`, dan `main.js` untuk mengexport data-data yang dibutuhkan. Sedangkan `import` digunakan pada file `storage.js`, `render.js`, `form.js`, dan `main.js` untuk mengimport data-data yang dibutuhkan seperti misalnya kita hanya membutuhkan fungsi `getFormData` pada file `form.js`, maka kita hanya perlu mengimport fungsi `getFormData` saja, bukan seluruh data yang ada pada file `form.js`, begitu pula sebaliknya.
 
-Dalam penggunaannya, `export` dan `import` dapat dilihat pada kode diatas. Pada kode diatas, `export` digunakan pada file `data.js`, `storage.js`, `render.js`, `form.js`, dan `main.js` untuk mengexport data-data yang dibutuhkan. Sedangkan `import` digunakan pada file `storage.js`, `render.js`, `form.js`, dan `main.js` untuk mengimport data-data yang dibutuhkan.
+Perlu menjadi catatan, bahwa `export` dan `import` hanya dapat digunakan pada file yang menggunakan ekstensi `.js`. Jika file yang digunakan tidak menggunakan ekstensi `.js`, maka `export` dan `import` tidak dapat digunakan. Terdapat catatan lainnya adalah `export` dan `import` hanya dapat digunakan pada browser yang mendukung ES6. Jika browser yang digunakan tidak mendukung ES6, maka `export` dan `import` tidak dapat digunakan, namun hal ini tidak perlu dikhawatirkan karena pada rata-rata browser yang digunakan sudah mendukung ES6 (dalam hal ini hanya browser Internet Explorer masih belum mendukung ES6 yang mana pada saat ini Microsoft telah mengganti Internet Explorer dengan Microsoft Edge yang sudah mendukung ES6 dan lebih baru), serta diperlukannya perubahan pada pemanggilan script javascript pada file html dengan menambahkan `type="module"` pada tag script seperti pada kode di bawah ini.
 
-Perlu menjadi catatan, bahwa `export` dan `import` hanya dapat digunakan pada file yang menggunakan ekstensi `.js`. Jika file yang digunakan tidak menggunakan ekstensi `.js`, maka `export` dan `import` tidak dapat digunakan.Catatan lainnya adalah, `export` dan `import` hanya dapat digunakan pada browser yang mendukung ES6. Jika browser yang digunakan tidak mendukung ES6, maka `export` dan `import` tidak dapat digunakan, serta diperlukannya perubahan pada pemanggilan script javascript pada file html dengan menambahkan `type="module"` pada tag script. 
-  
+```html
+<script src="js/data.js" type="module"></script>
+```
+
 [⬆️Back to top⬆️](#javascript-web-storage)
   
