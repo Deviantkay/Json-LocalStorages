@@ -8,7 +8,17 @@ const latestDataButton = document.getElementById('latest-data-button');
 const allDataButton = document.getElementById('all-data-button');
 const clearDataButton = document.getElementById('clear-data-button');
 const dataContainer = document.getElementById('data-container');
-
+  
+// fungsi untuk mendapatkan data form
+function getFormData() {
+  return {
+    firstName: firstNameInput.value,
+    lastName: lastNameInput.value,
+    gender: genderSelect.value,
+    address: addressTextarea.value
+  };
+}
+  
 // fungsi untuk menambah data ke storage
 function addDataToStorage(data, storageType) {
   let storedData = getDataFromStorage(storageType);
@@ -20,7 +30,7 @@ function addDataToStorage(data, storageType) {
   
   console.log('\ndata telah ditambahkan ke '+storageType);
 }
-
+  
 // fungsi untuk mendapatkan data dari storage
 function getDataFromStorage(storageType) {
   const storedData = localStorage.getItem(storageType);
@@ -29,7 +39,7 @@ function getDataFromStorage(storageType) {
   }
   return null;
 }
-
+  
 // fungsi untuk menampilkan data
 function renderData(data) {
   dataContainer.innerHTML = '';
@@ -48,8 +58,8 @@ function renderData(data) {
     dataContainer.appendChild(noDataText);
   }
 }
-
-
+  
+  
 // fungsi untuk mendapatkan data terbaru
 function latestData() {
   const storedData = getDataFromStorage(storageOptionSelect.value);
@@ -61,13 +71,13 @@ function latestData() {
     renderData(null);
   }
 }
-
+  
 // fungsi untuk mendapatkan semua data
 function allData() {
   const storedData = getDataFromStorage(storageOptionSelect.value);
   renderData(storedData);
 }
-
+  
 // fungsi untuk menghapus semua data
 function clearData(storageType) {
   const confirmDelete = confirm('Apakah Anda yakin ingin menghapus semua data?');
@@ -79,8 +89,8 @@ function clearData(storageType) {
     console.log('\ndata telah dihapus dari ' + storageOptionSelect.options[storageOptionSelect.selectedIndex].text + ' Storage');
   }
 }
-
-
+  
+  
 // fungsi untuk mengirim data
 function handleSubmit(event) {
   event.preventDefault();
@@ -91,15 +101,15 @@ function handleSubmit(event) {
   lastNameInput.value = '';
   addressTextarea.value = '';
 }
-
+  
 // menambahkan event listener ke button submit
 submitButton.addEventListener('click', handleSubmit);
-
+  
 // menambahkan event listener ke button latest data
 latestDataButton.addEventListener('click', latestData);
-
+  
 // menambahkan event listener ke button all data
 allDataButton.addEventListener('click', allData);
-
+  
 // menambahkan event listener ke button clear data
 clearDataButton.addEventListener('click', clearData);
