@@ -92,9 +92,9 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
     </div>
     </form>
     <div class="center">
-    <button id="latest-data-button">Latest Data</button>
-    <button id="all-data-button">All Data</button>
-    <button id="clear-data-button">Clear Data</button>
+      <button id="latest-data-button">Latest Data</button>
+      <button id="all-data-button">All Data</button>
+      <button id="clear-data-button">Clear Data</button>
     </div>
     <div id="data-container">Belum Ada Data Yang Ditampilkan</div>
 ```
@@ -102,6 +102,8 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
 Pada kode diatas, terdapat sebuah form yang memiliki input text, select, dan textarea. Form ini digunakan untuk menginputkan data-data yang akan disimpan. Form ini juga memiliki sebuah tombol submit yang akan digunakan untuk menyimpan data-data yang telah diinputkan.
   
 Setelah form, terdapat sebuah div yang berisi tiga buah tombol. Tombol ini digunakan untuk menampilkan data-data yang telah disimpan, memfilter data yang ditampilkan hanya ke yang baru saja diinput, dan menghapus data-data yang telah disimpan pada storage yang dipilih. fungsi dari tombol ini akan dibahas pada bagian Javascript.
+
+Lebih panjangnya, tombol-tombol pada div tersebut bereaksi terhadap apa yang sedang dipilih di select storage-option. Jika storage-option dipilih session, maka tombol latest-data-button akan menampilkan data-data yang baru saja diinputkan, dan tombol all-data-button akan menampilkan semua data-data yang telah disimpan. Jika storage-option dipilih local, maka tombol latest-data-button akan menampilkan data-data yang baru saja diinputkan, dan tombol all-data-button akan menampilkan semua data-data yang telah disimpan. Jika storage-option dipilih cookie, maka tombol latest-data-button akan menampilkan data-data yang baru saja diinputkan, dan tombol all-data-button akan menampilkan semua data-data yang telah disimpan.
   
 Setelah tombol, terdapat sebuah div yang akan digunakan untuk menampilkan data-data yang telah disimpan.
 
