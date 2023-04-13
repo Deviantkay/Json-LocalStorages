@@ -217,9 +217,12 @@ button[type="submit"]:hover {
   
 #data-container li {
     margin-bottom: 5px;
+}
 ```
-[⬆️Back to top⬆️](#javascript-web-storage)
 
+CSS Diatas digunakan untuk memberikan style pada form, tombol, dan kontainer data. Pada form, terdapat beberapa style yang digunakan untuk memberikan style pada label, input, select, dan textarea. Pada tombol, terdapat beberapa style yang digunakan untuk memberikan style pada tombol latest-data-button, all-data-button, dan clear-data-button. Pada kontainer data, terdapat beberapa style yang digunakan untuk memberikan style pada h2, p, ul, dan li. 
+
+[⬆️Back to top⬆️](#javascript-web-storage)
 ###  Penjelasan JS
   
 ```js
