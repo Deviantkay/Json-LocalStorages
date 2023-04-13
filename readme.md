@@ -25,7 +25,7 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
   
 ##  Project Tree
   
-- 📂 [__JS Web Storage__](https://github.com/Deviantkay/Json-LocalStoragesJs-Web-Storage)
+- 📂 [__JS Web Storage__](#javascript-web-storage)
   - 📂[Non Export](nonexport)
     - 📄 [Index](nonexport/index.html)
     - 📄 [Script](nonexport/main.js)
@@ -39,7 +39,7 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
       - 📄 [form](withexport/lib/form)
       - 📄 [render](withexport/lib/render.js)
       - 📄 [storage](withexport/lib/storage.js)
-  - 📄 [readme.md](readme.md )
+  - 📄 [readme.md](readme.md)
 ---
   
 ##  Table Of Content
@@ -101,7 +101,7 @@ Dengan menggunakan Web Storage, pengembang situs web dapat menyimpan data pada b
   
 Pada kode diatas, terdapat sebuah form yang memiliki input text, select, dan textarea. Form ini digunakan untuk menginputkan data-data yang akan disimpan. Form ini juga memiliki sebuah tombol submit yang akan digunakan untuk menyimpan data-data yang telah diinputkan.
   
-Setelah form, terdapat sebuah div yang berisi tiga buah tombol. Tombol ini digunakan untuk menampilkan data-data yang telah disimpan, menghapus semua data yang telah disimpan, dan menghapus data-data yang telah disimpan pada storage yang dipilih. fungsi dari tombol ini akan dibahas pada bagian Javascript.
+Setelah form, terdapat sebuah div yang berisi tiga buah tombol. Tombol ini digunakan untuk menampilkan data-data yang telah disimpan, memfilter data yang ditampilkan hanya ke yang baru saja diinput, dan menghapus data-data yang telah disimpan pada storage yang dipilih. fungsi dari tombol ini akan dibahas pada bagian Javascript.
   
 Setelah tombol, terdapat sebuah div yang akan digunakan untuk menampilkan data-data yang telah disimpan.
 
