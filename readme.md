@@ -393,7 +393,6 @@ Melihat kode javascript yang dibuat di atas memerlukan banyak sekali function di
 - `storage.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan storage.
 - `render.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan render.
 - `form.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan form.
-- `index.js` digunakan untuk menyimpan fungsi-fungsi yang berhubungan dengan event listener.
 - `main.js` digunakan untuk penggabungan semua file javascript yang dibuat sebelumnya dengan file `index.html`.
   
 Sehingga penyusunan kodenya dapat dilihat dibawah ini
